@@ -1,7 +1,7 @@
 class Clamp < Formula
   desc "command-line tool for local MAMP management"
   homepage "https://jide.github.io/clamp"
-  head "https://github.com/aerickson/clamp.git"
+  head "https://github.com/aerickson/clamp.git", :branch => "no_sudo"
   
   depends_on "mariadb"
 
