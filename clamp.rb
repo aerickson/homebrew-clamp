@@ -1,7 +1,7 @@
 class Clamp < Formula
   desc "command-line tool for local MAMP management"
   homepage "https://jide.github.io/clamp"
-  url "https://github.com/aerickson/clamp.git", :using => :git
+  url "https://github.com/aerickson/clamp.git", :using => :git, :branch => "master"
 
   depends_on "mariadb"
 
