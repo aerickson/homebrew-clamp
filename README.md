@@ -1,7 +1,12 @@
 homebrew-clamp
 ==============
 
-clamp tap
+
+## usage
+```
+brew tap aerickson/clamp
+brew install clamp
+```
 
 Changelog
 =========
