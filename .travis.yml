@@ -14,9 +14,9 @@ install:
   - brew install --HEAD clamp
   - brew uninstall coreutils || true
 
-# before_script:
-  # Discard any emails Drupal tries to send.
-  # - bin/disable-php-email
+before_script:
+  # display the version installed
+  - brew info clamp | grep '/usr/local/Cellar'
 
 script:
   # simple test should prove that launcher is working
