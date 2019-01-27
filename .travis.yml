@@ -20,12 +20,10 @@ install:
 #before_script:
 
 script:
-  # install
+  # install (also tests by running 'clamp -h')
   - brew install --HEAD clamp
   # display the version installed
   - brew info clamp | grep '/usr/local/Cellar'
-  # simple test should prove that launcher is working
-  - clamp -h
   # write config
   - clamp config write
   # TODO: more complicated test
