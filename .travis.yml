@@ -13,7 +13,9 @@ osx_image:
 
 install:
   - brew tap aerickson/clamp
-  - brew uninstall coreutils || true
+  # install coreutils for testing, but unlink so we have to explicitly use it
+  - brew install coreutils
+  - brew unlink coreutils
 
 #before_script:
 
