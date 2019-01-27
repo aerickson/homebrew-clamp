@@ -11,7 +11,7 @@ os:
 
 install:
   - brew tap aerickson/clamp
-  - brew install clamp
+  - brew install --HEAD clamp
   - brew uninstall coreutils || true
 
 # before_script:
