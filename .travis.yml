@@ -11,14 +11,15 @@ os:
 
 install:
   - brew tap aerickson/clamp
-  - brew install --HEAD clamp
   - brew uninstall coreutils || true
 
-before_script:
-  # display the version installed
-  - brew info clamp | grep '/usr/local/Cellar'
+#before_script:
 
 script:
+  # install
+  - brew install --HEAD clamp
+  # display the version installed
+  - brew info clamp | grep '/usr/local/Cellar'
   # simple test should prove that launcher is working
   - clamp -h
   # write config
