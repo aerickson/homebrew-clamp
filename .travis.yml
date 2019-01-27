@@ -25,6 +25,6 @@ script:
   # simple test should prove that launcher is working
   - clamp -h
   # write config
-  - clamp config
+  - clamp config write
   # TODO: more complicated test
 
