@@ -21,4 +21,7 @@ before_script:
 script:
   # simple test should prove that launcher is working
   - clamp -h
+  # write config
+  - clamp config
   # TODO: more complicated test
+
