@@ -6,7 +6,7 @@ class Clamp < Formula
   depends_on "mariadb"
 
   def install
-    #inreplace "clamp", %r{/usr/local/clamp}, prefix
+    inreplace "clamp", %r{/usr/local/clamp}, prefix
     prefix.install Dir["*"]
     bin.install_symlink "../clamp"
   end
