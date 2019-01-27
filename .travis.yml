@@ -1,0 +1,24 @@
+---
+os: 
+  - osx
+
+#before_install:
+  # Make sure composer is up-to-date
+  #- composer self-update
+  # Get netstat
+  #- sudo apt-get update -qq
+  #- sudo apt-get install net-tools
+
+install:
+  - brew tap aerickson/clamp
+  - brew install clamp
+  - brew uninstall coreutils || true
+
+# before_script:
+  # Discard any emails Drupal tries to send.
+  # - bin/disable-php-email
+
+script:
+  # simple test should prove that launcher is working
+  - clamp -h
+  # TODO: more complicated test
